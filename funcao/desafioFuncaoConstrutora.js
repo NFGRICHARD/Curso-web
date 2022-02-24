@@ -19,5 +19,4 @@ function criandoPessoa (nome) {
 }
 
 const p2 = new criandoPessoa('Maria')
-
 p2.falar()
