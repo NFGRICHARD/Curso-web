@@ -6,9 +6,14 @@ function conta(x, y ) {
     this.sub = x - y
     this.mult = x * y
     this.div = x / y
-    console.log('Soma = '+this.soma, 'subtração = '+this.sub,
-    'Multiplicação = '+this.mult, 'Divisão = '+this.div)
-    
+    console.log('Soma = '+this.soma, 'Subtração = '+this.sub,
+    'Multiplicação = '+this.mult, 'Divisão = '+this.div)   
+}
+console.log(conta(200,10))
+
+// Maneira do professor de fazer 
+function calcularOperacoes (operador1, operador2) {
+    console.log(operador1+operador2, operador1-operador2, operador1*operador2, operador1/operador2);
 }
 
-console.log(conta(200,10))
+calcularOperacoes(1, 2)
