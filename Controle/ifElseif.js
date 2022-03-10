@@ -16,4 +16,4 @@ const resultado = function (nota){
     }
 }
 
-resultado(10)
+resultado(5)
