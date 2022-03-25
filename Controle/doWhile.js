@@ -1,5 +1,5 @@
-function getInteiroAleatorioEntre(min, max){
-    const valor = Math.random() * (max - min) + min
+function getInteiroAleatorioEntre(){
+    const valor = Math.random() * (10 - -1) + -1
     return Math.floor(valor)
 }
 

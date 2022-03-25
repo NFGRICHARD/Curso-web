@@ -7,4 +7,11 @@ function calcularValor(mes, valor){
     }
 }
 
-console.log(calcularValor(4, 100))
+console.log(calcularValor(3, 100))
+
+function getRandomArbitrary(min, max) {
+    valor = Math.random() * (max - min) + min
+    return Math.floor(valor)
+}
+
+console.log(getRandomArbitrary(1,10))

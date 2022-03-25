@@ -7,15 +7,19 @@ considerando que todos pagam R$ 100 mais um adicional conforme a seguinte tabela
 
 function plano(idade){
     const fixo = 100
-    if(idade < 10){
+    if(idade <= 10){
         return `O preço do plano é de R$${fixo + 80},00`
-    }else if (idade > 10 & idade < 30) {
+    }else if (idade < 30) {
         return `O preço do plano é de R$${fixo + 50},00`
-    }else if (idade > 30 & idade < 60) {
+    }else if (idade < 60) {
         return `O preço do plano é de R$${fixo + 95},00`
-    }else (idade > 60) 
-        return f`O preço do plano é de R$${ixo + 130},00`
-    
+    }else { 
+        return `O preço do plano é de R$${fixo + 130},00`
+    }
 }
 
+console.log(plano(8))
 console.log(plano(15))
+console.log(plano(35))
+console.log(plano(52))
+console.log(plano(80))
