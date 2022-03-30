@@ -35,4 +35,10 @@ function calcularTempo(alturaMenor, taxaAlturaMenor, alturaMaior, taxaAlturaMaio
     return qtdAnos
 }
 
-console.log(calcularCrescimento(150, 2, 130, 4));
+console.log(calcularCrescimento(150, 2, 150, 4));
+console.log(calcularCrescimento(150, 5, 150, 4));
+console.log(calcularCrescimento(150, 2, 150, 2));
+console.log()
+console.log(calcularCrescimento(120, 2, 160, 4));
+console.log(calcularCrescimento(150, 2, 160, 2));
+console.log(calcularCrescimento(150, 5, 160, 2));

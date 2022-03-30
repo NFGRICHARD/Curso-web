@@ -6,37 +6,29 @@ aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a médi
 
 
 
-function aluno(nota1,nota2,nota3){
-    function gerador(){
-            const codigo = Math.random() * (100 - -1) + -1
-            return Math.floor(codigo)
-    }
+function aluno(codigo, nota1,nota2,nota3){
     media =  ((nota1 * 3)+(nota2 * 3)+(nota3 * 4))/10
-
-    if(gerador() < 0 ){
+    if(codigo < 0 ){
         return 'O CODIGO DO ALUNO É NEGATIVO'
     }else if (media >= 5){
-        return `Codigo do aluno: ${gerador()} | Nota1: ${nota1} Nota2: ${nota2} Nota3: ${nota3}
+        return `Codigo do aluno: ${codigo} | Nota1: ${nota1} Nota2: ${nota2} Nota3: ${nota3}
         | Media: ${media} | APROVADO!`
     }else {
-        return `Codigo do aluno: ${gerador()} | Nota1: ${nota1} Nota2: ${nota2} Nota3: ${nota3}| Media: {media} | REPROVADO!`
+        return `Codigo do aluno: ${codigo} | Nota1: ${nota1}, Nota2: ${nota2}, Nota3: ${nota3}| REPROVADO!`
     }
+}
+console.log(aluno(123, 2.8, 6, 3.5))
 
+
+function calcularNotaFinal(codAluno, nota1, nota2, nota3){
+    let nota = []
+    nota.push(nota1)
+    nota.push(nota2)
+    nota.push(nota3)
+    nota.sort((a,b)=> a < b ? 1 : -1)
+
+    let mediaFinal = (nota[0] * 4 + nota[1] * 3 + nota[2] * 3)/10
+    return `Código do Aluno: ${codAluno}. Notas: ${nota1}, ${nota2}, ${nota3}. ${mediaFinal < 5 ? 'Reprovado.' : 'Aprovado.'}`
 }
 
-console.log(aluno(4,2,8))
-
-
-
-
-
-
-
-
-
-
-/*
-function getRandomArbitrary(min, max) {
-    valor = Math.random() * (max - min) + min
-    return Math.floor(valor)
-}*/
+console.log(calcularNotaFinal(230,5,6,7))

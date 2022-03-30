@@ -21,7 +21,9 @@ classificaAluno(61)
 classificaAluno(38)
 classificaAluno(30)
 
+tt = 3 % 2
 
+console.log(tt)
 
 
 

@@ -7,5 +7,4 @@ function pessoa() {
     }, 1000)
 }
 
-new p
-essoa
+new pessoa()

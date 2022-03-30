@@ -15,3 +15,5 @@ function getRandomArbitrary(min, max) {
 }
 
 console.log(getRandomArbitrary(1,10))
+
+
